@@ -15,3 +15,6 @@
 
 6、SVGAPlayerlibrary
    YY团队开源礼物动画播放框架    https://github.com/yyued/SVGAPlayer-Android
+   
+7、customizeviewlibrary
+   自定义View库

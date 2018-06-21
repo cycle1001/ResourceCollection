@@ -7,6 +7,8 @@
 //import java.net.UnknownHostException;
 //import java.text.ParseException;
 //
+//import retrofit2.HttpException;
+//
 ///**
 // * 异常处理工厂
 // * 主要是解析异常，输出自定义ApiException
@@ -45,7 +47,7 @@
 //            apiException.setDisplayMessage(JSONException_MSG);
 //        }else if (e instanceof UnknownHostException){
 //            /*无法解析该域名异常*/
-//            apiException.setCode(CodeException.UNKOWNHOST_ERROR);
+//            apiException.setCode(CodeException.UNKNOWN_HOST_ERROR);
 //            apiException.setDisplayMessage(UnknownHostException_MSG);
 //        } else {
 //            /*未知异常*/

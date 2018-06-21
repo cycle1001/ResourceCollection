@@ -1,1 +1,1 @@
-include ':app', ':titlebarlibrary', ':circleimageviewlibrary', ':toolslibrary', ':lubanpiclibrary', ':networklibrary', ':SVGAPlayerlibrary'
+include ':app', ':titlebarlibrary', ':circleimageviewlibrary', ':toolslibrary', ':lubanpiclibrary', ':networklibrary', ':SVGAPlayerlibrary', ':customizeviewlibrary'

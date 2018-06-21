@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.Toast
 import com.allen.res.collect.webview.WebViewActivity
 import com.allen.res.collect.R
+import com.allen.res.collect.activity.CompressActivity
+import com.allen.res.collect.activity.Marquee02Activity
+import com.allen.res.collect.activity.MarqueeActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,5 +38,21 @@ class MainActivity : AppCompatActivity() {
 
     fun btnSVGAPlayer(view: View) {
         startActivity(Intent(MainActivity@this, SVGAPlayerActivity::class.java))
+    }
+
+    fun btnRollTextView(view: View) {
+        startActivity(Intent(MainActivity@this, RollTextViewActivity::class.java))
+    }
+
+    fun btnCompress(view: View) {
+        startActivity(Intent(MainActivity@this, CompressActivity::class.java))
+    }
+
+    fun btnMarquee(view: View) {
+        startActivity(Intent(MainActivity@this, MarqueeActivity::class.java))
+    }
+
+    fun btnMarquee02(view: View) {
+        startActivity(Intent(MainActivity@this, Marquee02Activity::class.java))
     }
 }

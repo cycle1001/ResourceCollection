@@ -1,48 +1,72 @@
 package com.allen.res.tools;
 
+import android.text.TextUtils;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
 public class StrZipUtil {
 
-    /**
-     * @param input 需要压缩的字符串
-     * @return 压缩后的字符串
-     * @throws IOException IO
-     */
-    public static String compress(String input) throws IOException {
-        if (input == null || input.length() == 0) {
-            return input;
-        }
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        GZIPOutputStream gzipOs = new GZIPOutputStream(out);
-        gzipOs.write(input.getBytes());
-        gzipOs.close();
-        return out.toString("UTF-8");
-    }
-    /**
-     * @param zippedStr 压缩后的字符串
-     * @return 解压缩后的
-     * @throws IOException IO
-     */
-    public static String unCompress(String zippedStr) throws IOException {
-        if (zippedStr == null || zippedStr.length() == 0) {
-            return zippedStr;
-        }
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        ByteArrayInputStream in = new ByteArrayInputStream(zippedStr
-                .getBytes("UTF-8"));
-        GZIPInputStream gzipIs = new GZIPInputStream(in);
-        byte[] buffer = new byte[256];
-        int n;
-        while ((n = gzipIs.read(buffer)) >= 0) {
-            out.write(buffer, 0, n);
-        }
-        // toString()使用平台默认编码，也可以显式的指定如toString("GBK")
-        return out.toString("UTF-8");
-    }
-
+//    /**
+//     * Gzip 压缩数据
+//     *
+//     * @param unGzipStr
+//     * @return
+//     */
+//    public static String compressForGzip(String unGzipStr) {
+//
+//        if (TextUtils.isEmpty(unGzipStr)) {
+//            return null;
+//        }
+//        try {
+//            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//            GZIPOutputStream gzip = new GZIPOutputStream(baos);
+//            gzip.write(unGzipStr.getBytes());
+//            gzip.close();
+//            byte[] encode = baos.toByteArray();
+//            baos.flush();
+//            baos.close();
+//            return Base64Encoder.encode(encode);
+//        } catch (UnsupportedEncodingException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        return null;
+//    }
+//
+//    /**
+//     * Gzip解压数据
+//     *
+//     * @param gzipStr
+//     * @return
+//     */
+//    public static String decompressForGzip(String gzipStr) {
+//        if (TextUtils.isEmpty(gzipStr)) {
+//            return null;
+//        }
+//        byte[] t = Base64Decoder.decodeToBytes(gzipStr);
+//        try {
+//            ByteArrayOutputStream out = new ByteArrayOutputStream();
+//            ByteArrayInputStream in = new ByteArrayInputStream(t);
+//            GZIPInputStream gzip = new GZIPInputStream(in);
+//            byte[] buffer = new byte[BUFFERSIZE];
+//            int n = 0;
+//            while ((n = gzip.read(buffer, 0, buffer.length)) > 0) {
+//                out.write(buffer, 0, n);
+//            }
+//            gzip.close();
+//            in.close();
+//            out.close();
+//            return out.toString();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return null;
+//    }
 }

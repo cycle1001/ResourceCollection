@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/SVGAPlayerlibrary/SVGAPlayerlibrary.iml" filepath="$PROJECT_DIR$/SVGAPlayerlibrary/SVGAPlayerlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/circleimageviewlibrary/circleimageviewlibrary.iml" filepath="$PROJECT_DIR$/circleimageviewlibrary/circleimageviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customizeviewlibrary/customizeviewlibrary.iml" filepath="$PROJECT_DIR$/customizeviewlibrary/customizeviewlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/lubanpiclibrary/lubanpiclibrary.iml" filepath="$PROJECT_DIR$/lubanpiclibrary/lubanpiclibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/networklibrary/networklibrary.iml" filepath="$PROJECT_DIR$/networklibrary/networklibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/titlebarlibrary/titlebarlibrary.iml" filepath="$PROJECT_DIR$/titlebarlibrary/titlebarlibrary.iml" />

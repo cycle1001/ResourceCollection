@@ -16,6 +16,10 @@ public class ApiException extends Exception {
      */
     private String displayMessage;
 
+    public ApiException(Throwable throwable) {
+
+    }
+
     public ApiException(Throwable throwable, @CodeException.CodeEp int code, String showMsg) {
         super(showMsg, throwable);
         setCode(code);

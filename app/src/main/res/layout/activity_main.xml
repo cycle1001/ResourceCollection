@@ -39,10 +39,47 @@
         />
 
     <Button
+        android:id="@+id/btn_svg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SVGA动画"
         android:layout_below="@id/btn_web_view"
         android:onClick="btnSVGAPlayer"/>
+
+    <Button
+        android:id="@+id/btn_roll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="超出宽度跑马灯"
+        android:layout_below="@id/btn_web_view"
+        android:layout_toRightOf="@+id/btn_svg"
+        android:onClick="btnRollTextView"/>
+
+    <Button
+        android:id="@+id/btn_compress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据压缩"
+        android:layout_below="@id/btn_web_view"
+        android:layout_toRightOf="@+id/btn_roll_text"
+        android:onClick="btnCompress"/>
+    <Button
+        android:id="@+id/btn_marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="垂直跑马灯"
+        android:layout_below="@id/btn_svg"
+        android:onClick="btnMarquee"/>
+
+    <Button
+        android:id="@+id/btn_marquee_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="垂直跑马灯02"
+        android:layout_below="@id/btn_svg"
+        android:layout_toRightOf="@id/btn_marquee"
+        android:onClick="btnMarquee02"/>
+
+
 
 </RelativeLayout>

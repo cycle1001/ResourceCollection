@@ -32,6 +32,14 @@
         <activity android:name=".activity.kotlin.TitleBarActivity" />
 
         <activity android:name=".activity.kotlin.SVGAPlayerActivity" />
+
+        <activity android:name=".activity.kotlin.RollTextViewActivity" />
+
+        <activity android:name=".activity.CompressActivity" />
+
+        <activity android:name=".activity.MarqueeActivity" />
+
+        <activity android:name=".activity.Marquee02Activity" />
     </application>
 
 </manifest>
